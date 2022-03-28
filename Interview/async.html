@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>hello</p>
+    <div style="width: 100px; height: 100px;background-color:green; position:absolute"></div>
+</body>
+<script>
+
+    /*function load(src, resolve, reject) {
+        let img = new Image()
+        img.src = src
+        img.onload = () => {
+            resolve(img)
+        }
+        img.onerror = () => {
+            reject()
+        }
+    }
+
+    load("233.jpg", (img) => {
+
+        console.log("成功")
+    }, () => {
+        console.log("失败")
+    })
+    console.log()*/
+
+    /*function interval(callback, delay) {
+        let id = setInterval(() => {
+            callback(id)
+        }, delay)
+    }
+
+    interval(id => {
+        console.log(id)
+    }, 1000)*/
+
+
+    /*let i = 0*/
+    function interval(callback, delay) {
+        let id = setInterval(() => {
+            callback(id)
+        }, delay)
+    }
+    interval(timeId => {
+        const div = document.querySelector("div")
+
+        let left = parseInt(window.getComputedStyle(div).left)
+
+        console.log(window.getComputedStyle(div).left)
+        div.style.left = left + 10 + "px"
+
+        if (left >= 100) {
+            clearInterval(timeId)
+        }
+    }, 100)
+
+
+
+    /*function f2(callback) {
+        callback()
+
+    }
+
+    function f1() {
+        console.log("1")
+    }
+
+    function f3() {
+        console.log("3")
+    }
+
+    function who() {
+        for (i = 0; i < 100; i++) {
+            console.log("what")
+        }
+    }
+    f2(who)
+    f1()
+    f3()*/
+</script>
+
+</html>

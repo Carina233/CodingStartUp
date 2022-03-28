@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let ls = {
+        name: "ls",
+        key: Symbol(),
+    }
+
+    let ls2 = {
+        name: "ls",
+        key: Symbol(),
+    }
+    let grade = {
+        [ls.key]: {
+            js: 50,
+
+        },
+        [ls2.key]: {
+            js: 60,
+
+        }
+    }
+
+    fun = function () {
+
+    }
+
+    /*console.log(typeof 1)
+    console.log(1 instanceof Number)
+    console.log([].constructor === Array)
+    console.log(Object.prototype.toString.call(2))*/
+    let hi = [1, 2, 3]
+    //console.log(hi.split("").reverse().join(""))
+    //console.log(Object.prototype.toString.call([1, 2, 3]).slice(8, -2))
+    //console.log(Array.prototype)
+    //console.log(Object.getPrototypeOf([1, 2, 3]))
+    console.log(Array.isArray([1, 2, 3]))
+    var a = undefined;
+    var undefined = 1
+    console.log(a)
+    console.log(undefined)
+
+</script>
+
+</html>

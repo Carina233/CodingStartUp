@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <!-- <meta name="keywords" content="关键词"> -->
+    <!-- <meta http-equiv="Refresh" content="3;url=http://www.baidu.com"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="interview.css">
+    <script src="interview.js"></script>
+</head>
+
+<body>
+    <!-- <audio controls="controls" autoplay loop="true">
+        <source src="myMusic.mp3" type="">
+    </audio>
+    <video src='' poster='' controls></video> -->
+
+    <form action="#">
+        <input type="number">
+        <input type="submit" formaction="">
+    </form>
+    <form action="www.baidu123.com" method="get" oninput="alert('a')">
+        First name: <input type="text" name="fname" autocomplete="on" /><br />
+        Last name: <input type="email" name="lname" /><br />
+        Test: <input type="text" name="phoneNum" pattern="[A-Za-z]{3}" /><br />
+        Test: <input type="file" name="phoneNum" /><br />
+        <input type="submit" value="Submit" /><br />
+        <input type="submit" formaction="www.baidu.com" value="Submit as admin" />
+
+    </form>
+    <p id="pp">666</p>
+    <button onclick="myF()">btn</button>
+    <!-- <progress max="100" value="0"></progress> -->
+    <meter min="0" max="20" value="5">0</meter>
+
+    <meter>5 out of 10</meter>
+
+    <img draggable="false" src="gh_77c0a22e43b5_258.jpg" srcset="233.jpg 2x">
+    <!-- <meter>30%</meter> -->
+    <b>sad</b>
+
+    <label>Date:<input type="text" /></label>
+
+</body>
+<script>
+    function myF() {
+        document.querySelector("p").style.backgroundColor = "red"
+        alert(document.querySelector("p"))
+    }
+</script>
+
+</html>

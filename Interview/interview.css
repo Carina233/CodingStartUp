@@ -1,0 +1,6 @@
+audio{
+    background: #ff8c00;
+}
+audio::-webkit-media-controls-panel{
+    background: #ff8c00;
+}
